@@ -114,8 +114,8 @@ function hatFinder() {
         } while (i == lastHat);
 
         lastHat = i;
-    }
 
+    }
 
 }
 
@@ -152,9 +152,6 @@ function generate() {
     //     width: 50%;
     // `;
 
-    hatTag.style.cssText = `
-        color: black;
-    `;
     topsTag.style.cssText = `
         color: black;
     `;
@@ -164,6 +161,17 @@ function generate() {
     shoeTag.style.cssText = `
         color: black;
     `;
+
+    if (document.getElementById("hatCheckBox").checked) {
+        hatTag.style.cssText = `
+            color: black;
+        `;
+    } else if (document.getElementById("hatCheckBox").checked === false) {
+        hatTag.innerHTML = "check hat and regenerate an outfit to generate a hat";
+        hatTag.style.cssText = `
+            color: grey;
+        `;
+    }
 
 
 }
