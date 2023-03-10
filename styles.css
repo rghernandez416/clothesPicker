@@ -1,0 +1,49 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.container{
+    display: inline;
+    float: left;
+    text-align: center;
+    margin: auto;
+}
+
+#section-1, #section-2 {
+    width: 50%;
+}
+
+#hatDiv {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+h5, h6 {
+    text-align: center;
+}
+
+h6 {
+    color: grey;
+}
+
+#addItem {
+    display: none;
+}
+
+#inputItem {
+    display: none;
+    margin: auto;
+    width: 50%;
+}
+
+#addFit {
+    display: none;
+}

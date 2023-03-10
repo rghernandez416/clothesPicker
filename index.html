@@ -1,0 +1,77 @@
+<!-- Gabriel Hernandez, February 2023, Outfit Genrator -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Outfit Generator</title>
+</head>
+<body>
+    <h1>Generate an Outfit</h1>
+
+    <!-- div to displat this section and the form section side by side -->
+    <div id="section-1" class="container">
+        <div id="hatDiv">
+            <label class="hatPair" id="hatLabel" for="hat">Hat</label>
+            <input type="checkbox" name="hat" id="hatCheckBox" class="hatPair">
+        </div>
+        <h6 class="displayClothes" id="hat">Hat Displayed Here</h6>
+        <h5>Shirt</h5>
+        <h6 class="displayClothes" id="tops">Shirt Displayed Here</h6>
+        <h5>Bottoms</h5>
+        <h6 class="displayClothes" id="bottoms">Bottomes Displayed Here</h6>
+        <h5>Shoes</h5>
+        <h6 class="displayClothes" id="shoes">Shoes Displayed Here
+        </h6>
+    </div>
+
+<div id="section-2" class="container">
+    <p>Hows the weather?</p>
+
+ <form>
+        <!-- <label for="hat">Hat</label>
+        <input type="checkbox" name="hat" id="hatCheckBox"> -->
+
+        <label for="weather">Cold (Lower than 60°)</label>
+        <input type="radio" name="weather" id="cold"  value="cold">
+        
+        <br>
+
+        <label for="weather">Moderate (60° to 90°) </label>
+        <input type="radio" name="weather" id="moderate"  value="moderate" checked>
+
+        <br>
+
+        <label for="weather">Hot (+90°)</label>
+        <input type="radio" name="weather" id="hot"  value="hot">
+    </form>
+    
+    <br>
+
+    <button type="button" id="generate" onclick="generate()">Generate Outfit</button>
+ 
+    <!-- Feature to add in the future -->
+    <!-- <button type="button" id="addItem" onclick="addItem()">Add new clothes</button>
+
+    <p>Select what type of clothing you want to add</p>
+    
+    <label for="clotheType">Hat</label>
+    <input type="radio" name="clotheType" id="newHat">
+    <label for="clotheType">top</label>
+    <input type="radio" name="clotheType" id="newTop">
+    <label for="clotheType">bottom</label>
+    <input type="radio" name="clotheType" id="newBottoms">
+    <label for="clotheType">shoe</label>
+    <input type="radio" name="clotheType" id="newShoe">
+    
+    <input type="text" name="inputItem" id="inputItem" placeholder="Insert item to add! Ex: Grey Sweate Pants">
+
+    <button type="button" id="addFit" onclick="addFit()">Add to Favorite Outfits</button> -->
+</div>
+    
+    <script src="script.js" async></script>
+</body>
+</html>
